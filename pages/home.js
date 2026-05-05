@@ -12,18 +12,15 @@ function renderHome() {
       </a>
 
       <ul class="navbar-links">
-        <li><a href="#funcionalidades">Funcionalidades</a></li>
-        <li><a href="#soluciones">Soluciones</a></li>
-        <li><a href="#integraciones">Integraciones</a></li>
-        <li><a href="#ventajas">Ventajas</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/nosotros">Nosotros</a></li>
+        <li><a href="#ventajas">Beneficios</a></li>
+        <li><a href="#contacto">Contáctanos</a></li>
+        <li><a href="#">Comparador de planes</a></li>
       </ul>
 
       <div class="navbar-actions">
-        <a href="#" class="navbar-area">Área de clientes</a>
-        <a href="#contacto" class="btn btn--primary">
-          Solicitar demo <span class="btn-arrow">→</span>
-        </a>
+        <a href="#" class="navbar-area">Ingresar</a>
       </div>
     </nav>
 
