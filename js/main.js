@@ -9,6 +9,10 @@ Router.register('/', () => {
   renderHome();
 });
 
+Router.register('/nosotros', () => {
+  renderNosotros();
+});
+
 // ── Init ──────────────────────────────────────────────────────────────────────
 
 Router.init();

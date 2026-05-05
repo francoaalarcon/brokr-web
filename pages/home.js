@@ -38,14 +38,14 @@ function renderHome() {
         <img src="/assets/img/logo-blanco-colores.png" alt="BROKR" class="hero-logo" />
 
         <h1 class="hero-title">
-          La plataforma que <em>automatiza</em><br/>
-          y simplifica la gestión de pólizas
+          La plataforma que <em>centraliza</em><br/>
+          la gestión de redes médicas y salud
         </h1>
 
         <p class="hero-subtitle">
-          BROKR conecta clientes, pólizas y servicios en un ecosistema
-          inteligente. Digitaliza y optimiza cada proceso de tu correduría
-          de forma rápida, eficiente y sin fricciones.
+          BROKR conecta asegurados, clínicas y aseguradoras en un ecosistema
+          Insurtech inteligente. Consulta coberturas, copagos y redes médicas
+          de Rímac, Pacífico y Mapfre en un solo lugar.
         </p>
 
         <div class="hero-actions">
@@ -67,25 +67,25 @@ function renderHome() {
     <!-- ── Intro ────────────────────────────────────────────────────────── -->
     <section class="intro" id="soluciones">
       <div class="intro__heading">
-        <h2>La solución para la gestión del negocio asegurador de tu organización.</h2>
+        <h2>La solución integral para la gestión de servicios de salud de tu organización.</h2>
       </div>
 
       <div class="intro__body">
         <p>
-          Gana independencia, autonomía y define reglas de gestión propias
-          frente a la verticalidad y poca flexibilidad de los procesos
-          tradicionales del sector asegurador.
+          Gana independencia y autonomía frente a la complejidad de los
+          sistemas tradicionales del sector asegurador peruano. Centraliza
+          toda la información de tu red médica en un solo lugar.
         </p>
         <p>
-          <strong>BROKR</strong> es el sistema de gestión especialmente diseñado
-          para corredurías y brokers de seguros, que incorpora todas las
-          herramientas necesarias para la gestión integrada del negocio
-          asegurador y la digitalización de los procesos vinculados.
+          <strong>BROKR</strong> es el ecosistema Insurtech especialmente diseñado
+          para centralizar convenios entre clínicas y aseguradoras, incorporando
+          todas las herramientas necesarias para la gestión integrada de redes
+          médicas, copagos y planes de salud en el Perú.
         </p>
         <ul>
-          <li>Soporte al área comercial para la venta y renovación de pólizas.</li>
-          <li>Integración con compañías aseguradoras y sistemas corporativos.</li>
-          <li>Herramientas de CRM, automatización y análisis de negocio.</li>
+          <li>Consulta de redes médicas por aseguradora (Rímac, Pacífico, Mapfre).</li>
+          <li>Gestión de copagos, coberturas y beneficios EPS.</li>
+          <li>Herramientas para corredores de seguros, RR.HH. y asegurados particulares.</li>
         </ul>
         <div class="intro__cta">
           <a href="#contacto" class="btn btn--primary">
@@ -98,7 +98,7 @@ function renderHome() {
     <!-- ── Features ─────────────────────────────────────────────────────── -->
     <div id="funcionalidades">
 
-      <!-- Feature 1: Gestión de pólizas — visual izquierda -->
+      <!-- Feature 1: Buscador de Redes Médicas — visual izquierda -->
       <section class="feature-split">
         <div class="feature-split__visual feature-split__visual--dark">
           <div class="mockup">
@@ -106,7 +106,7 @@ function renderHome() {
               <div class="mockup-dot"></div>
               <div class="mockup-dot"></div>
               <div class="mockup-dot"></div>
-              <span class="mockup-title">Gestión de pólizas</span>
+              <span class="mockup-title">Buscador de Redes Médicas</span>
             </div>
             <div class="mock-poliza">
               <div class="mock-card">
@@ -115,7 +115,7 @@ function renderHome() {
                   <div class="mock-line mock-line--w85"></div>
                   <div class="mock-line mock-line--w50"></div>
                 </div>
-                <span class="mock-badge mock-badge--green">Vigente</span>
+                <span class="mock-badge mock-badge--green">Rímac</span>
               </div>
               <div class="mock-card">
                 <div class="mock-card-icon mock-card-icon--teal"></div>
@@ -123,7 +123,7 @@ function renderHome() {
                   <div class="mock-line mock-line--w70"></div>
                   <div class="mock-line mock-line--w40"></div>
                 </div>
-                <span class="mock-badge mock-badge--yellow">Renovar</span>
+                <span class="mock-badge mock-badge--yellow">Pacífico</span>
               </div>
               <div class="mock-card">
                 <div class="mock-card-icon mock-card-icon--light"></div>
@@ -131,7 +131,7 @@ function renderHome() {
                   <div class="mock-line mock-line--w100"></div>
                   <div class="mock-line mock-line--w60"></div>
                 </div>
-                <span class="mock-badge mock-badge--blue">Pendiente</span>
+                <span class="mock-badge mock-badge--blue">Mapfre</span>
               </div>
               <div style="display:flex;gap:0.5rem;margin-top:0.25rem;">
                 <div style="flex:1;height:4px;border-radius:2px;background:rgba(3,204,158,0.5)"></div>
@@ -142,26 +142,26 @@ function renderHome() {
         </div>
 
         <div class="feature-split__content">
-          <span class="feature-label">Gestión integral</span>
-          <h3 class="feature-title">Centraliza y controla toda tu cartera de pólizas</h3>
+          <span class="feature-label">Búsqueda de clínicas</span>
+          <h3 class="feature-title">Encuentra la clínica correcta según tu aseguradora</h3>
           <p class="feature-body">
-            Accede a la información filtrada por perfil de usuario, cliente,
-            vendedor, equipo de ventas, oficina y sucursal. Mantén un seguimiento
-            completo del ciclo de vida de cada póliza.
+            Accede al directorio actualizado de clínicas y centros médicos
+            afiliados a las principales aseguradoras del Perú. Filtra por
+            especialidad, distrito, aseguradora y tipo de atención.
           </p>
           <ul class="feature-list">
-            <li>Gestión de perfiles por rol y acceso</li>
-            <li>Control de vencimientos y renovaciones</li>
-            <li>Seguimiento del proceso de suscripción</li>
-            <li>Estado y cobros de recibos</li>
-            <li>Previsiones mensuales de cartera</li>
-            <li>Configuración de ramos y productos</li>
+            <li>Clínicas afiliadas a Rímac, Pacífico y Mapfre</li>
+            <li>Filtros por distrito, especialidad y modalidad</li>
+            <li>Información de horarios y contacto</li>
+            <li>Validación en tiempo real de cobertura</li>
+            <li>Mapa interactivo de centros médicos</li>
+            <li>Actualización continua del directorio</li>
           </ul>
           <a href="#contacto" class="feature-link">Ver más detalles →</a>
         </div>
       </section>
 
-      <!-- Feature 2: Automatización BPM — visual derecha -->
+      <!-- Feature 2: Gestión de Copagos — visual derecha -->
       <section class="feature-split feature-split--reverse">
         <div class="feature-split__visual feature-split__visual--blue">
           <div class="mockup">
@@ -169,7 +169,7 @@ function renderHome() {
               <div class="mockup-dot"></div>
               <div class="mockup-dot"></div>
               <div class="mockup-dot"></div>
-              <span class="mockup-title">Automatización de procesos</span>
+              <span class="mockup-title">Gestión de Copagos</span>
             </div>
             <div class="mock-flow">
               <div class="mock-flow-row">
@@ -214,20 +214,20 @@ function renderHome() {
         </div>
 
         <div class="feature-split__content">
-          <span class="feature-label">Automatización BPM</span>
-          <h3 class="feature-title">Automatiza y agiliza tu flujo de trabajo</h3>
+          <span class="feature-label">Copagos y coberturas</span>
+          <h3 class="feature-title">Consulta tus copagos antes de ir a la clínica</h3>
           <p class="feature-body">
-            Automatización, multitarea, asistentes y ejecución desasistida de
-            procesos complejos. Todo lo necesario para conseguir alta
-            productividad en la gestión del negocio asegurador.
+            Conoce de antemano el monto de copago para cada procedimiento,
+            clínica y aseguradora. Evita sorpresas al momento de la atención
+            y planifica mejor el uso de tu seguro de salud.
           </p>
           <ul class="feature-list">
-            <li>Flujos de trabajo automatizados</li>
-            <li>Definición de tareas distribuibles</li>
-            <li>Descargas automáticas con compañías</li>
-            <li>Comunicaciones automáticas (email, SMS)</li>
-            <li>Alertas y notificaciones inteligentes</li>
-            <li>Procesos configura­bles por la correduría</li>
+            <li>Tabla de copagos por aseguradora y plan</li>
+            <li>Consulta por procedimiento o especialidad</li>
+            <li>Alertas de cobertura y exclusiones</li>
+            <li>Comparativo de costos entre clínicas</li>
+            <li>Historial de atenciones y gastos</li>
+            <li>Reportes exportables para RR.HH.</li>
           </ul>
           <a href="#contacto" class="feature-link">Ver más detalles →</a>
         </div>
@@ -278,29 +278,28 @@ function renderHome() {
         </div>
 
         <div class="feature-split__content">
-          <span class="feature-label">Inteligencia de negocio</span>
-          <h3 class="feature-title">Obtén una visión global del estado y evolución de tu negocio</h3>
+          <span class="feature-label">Reportes y análisis</span>
+          <h3 class="feature-title">Obtén una visión completa del uso de tu red médica</h3>
           <p class="feature-body">
-            Los cuadros de mando de BROKR te permiten obtener una visión
-            integral sobre la evolución de tu negocio para tomar decisiones
-            ejecutivas más acertadas. Analiza tu cartera, el rendimiento de
-            tus productos y el grado de retención de tus clientes.
+            Los dashboards de BROKR te permiten analizar el uso de los
+            servicios de salud, la distribución de atenciones por aseguradora
+            y el comportamiento de siniestros para una gestión más eficiente.
           </p>
           <ul class="feature-list">
-            <li>Distribución de la cartera</li>
-            <li>Producción de pólizas</li>
-            <li>Eficiencia comercial</li>
-            <li>Anulación y renovación</li>
-            <li>Siniestralidad</li>
-            <li>Comisiones devengadas</li>
-            <li>Fidelidad de clientes</li>
-            <li>Evolución financiera</li>
+            <li>Distribución de atenciones por aseguradora</li>
+            <li>Siniestralidad y frecuencia de uso</li>
+            <li>Clínicas más utilizadas por empleados</li>
+            <li>Análisis de costos y copagos</li>
+            <li>Indicadores de satisfacción y calidad</li>
+            <li>Evolución mensual de prestaciones</li>
+            <li>Comparativo de planes EPS</li>
+            <li>Alertas de consumo por departamento</li>
           </ul>
           <a href="#contacto" class="feature-link">Ver más detalles →</a>
         </div>
       </section>
 
-      <!-- Feature 4: CRM — visual derecha -->
+      <!-- Feature 4: Portal para Corredores — visual derecha -->
       <section class="feature-split feature-split--reverse">
         <div class="feature-split__visual feature-split__visual--teal">
           <div class="mockup mockup--light">
@@ -308,7 +307,7 @@ function renderHome() {
               <div class="mockup-dot"></div>
               <div class="mockup-dot"></div>
               <div class="mockup-dot"></div>
-              <span class="mockup-title" style="color:#8a93b2">CRM — Cliente</span>
+              <span class="mockup-title" style="color:#8a93b2">Portal para Corredores</span>
             </div>
             <div class="mock-client">
               <div class="mock-client-header">
@@ -346,25 +345,24 @@ function renderHome() {
         </div>
 
         <div class="feature-split__content">
-          <span class="feature-label">CRM integrado</span>
-          <h3 class="feature-title">Vende más y mejor con un CRM diseñado para seguros</h3>
+          <span class="feature-label">Portal para corredores</span>
+          <h3 class="feature-title">Gestiona tu cartera con herramientas especializadas en salud</h3>
           <p class="feature-body">
-            BROKR incluye un <strong>CRM específico para la gestión de seguros</strong>,
-            diseñado para potenciar el conocimiento del cliente y el desempeño
-            de las actividades comerciales. Invierte más tiempo en lo que
-            realmente importa: tus clientes.
+            BROKR incluye un <strong>portal especializado para corredores de seguros</strong>,
+            diseñado para potenciar la gestión de clientes, consulta de redes
+            médicas y seguimiento de beneficios de cada plan contratado.
           </p>
           <ul class="feature-list feature-list--single">
-            <li>Ficha 360° del cliente: pólizas, recibos, reclamaciones y tareas.</li>
-            <li>Segmentación avanzada para venta cruzada y campañas de marketing.</li>
-            <li>Control de interacciones: reuniones, llamadas, correos y SMS.</li>
-            <li>Gestión y seguimiento de oportunidades de venta generadas.</li>
+            <li>Ficha completa del asegurado: plan, coberturas y clínicas disponibles.</li>
+            <li>Seguimiento de renovaciones y vencimientos de pólizas de salud.</li>
+            <li>Acceso a tarifarios y comparativos de planes EPS.</li>
+            <li>Gestión de solicitudes y consultas de clientes en tiempo real.</li>
           </ul>
           <a href="#contacto" class="feature-link">Ver más detalles →</a>
         </div>
       </section>
 
-      <!-- Feature 5: Integraciones API — visual izquierda -->
+      <!-- Feature 5: Beneficios EPS — visual izquierda -->
       <section class="feature-split" id="integraciones">
         <div class="feature-split__visual feature-split__visual--dark">
           <div class="mockup">
@@ -372,7 +370,7 @@ function renderHome() {
               <div class="mockup-dot"></div>
               <div class="mockup-dot"></div>
               <div class="mockup-dot"></div>
-              <span class="mockup-title">Integraciones API</span>
+              <span class="mockup-title">Beneficios EPS</span>
             </div>
             <div class="mock-api">
               <div class="mock-api-row">
@@ -416,18 +414,18 @@ function renderHome() {
         </div>
 
         <div class="feature-split__content">
-          <span class="feature-label">Integraciones</span>
-          <h3 class="feature-title">La solución ideal para la transformación digital de tu correduría</h3>
+          <span class="feature-label">Beneficios EPS</span>
+          <h3 class="feature-title">Centraliza y comunica los beneficios de cada plan de salud</h3>
           <p class="feature-body">
-            BROKR ha sido construido para potenciar cuatro aspectos clave del
-            negocio asegurador: integración con sistemas internos, conectividad
-            con compañías, APIs abiertas y soluciones de marketplace.
+            BROKR centraliza los convenios y beneficios especiales de cada EPS,
+            facilitando la consulta de descuentos, coberturas adicionales y
+            condiciones preferenciales para asegurados y departamentos de RR.HH.
           </p>
           <ul class="feature-list feature-list--single">
-            <li><strong>Integración con sistemas corporativos</strong> para incorporar el negocio de seguros de forma transparente.</li>
-            <li><strong>Conectividad con compañías aseguradoras</strong> para el intercambio automático de información.</li>
-            <li><strong>API REST</strong> basada en WebServices para integrarse con aplicaciones de terceros.</li>
-            <li><strong>Soluciones marketplace</strong> para complementar modelos de negocio disruptivos.</li>
+            <li><strong>Convenios y descuentos</strong> por aseguradora y plan contratado, siempre actualizados.</li>
+            <li><strong>Beneficios adicionales</strong> por EPS: óptica, dental, maternidad y medicina preventiva.</li>
+            <li><strong>Portal de autogestión</strong> para que cada empleado consulte sus beneficios directamente.</li>
+            <li><strong>Integración con sistemas de RR.HH.</strong> para sincronizar altas, bajas y modificaciones de afiliados.</li>
           </ul>
           <a href="#contacto" class="feature-link">Ver más detalles →</a>
         </div>
@@ -446,10 +444,10 @@ function renderHome() {
     <section class="benefits" id="ventajas">
       <div class="benefits__header">
         <span class="benefits__label">Por qué BROKR</span>
-        <h2 class="benefits__title">Ventajas que transforman tu correduría</h2>
+        <h2 class="benefits__title">Ventajas para asegurados, RR.HH. y corredores</h2>
         <p class="benefits__subtitle">
-          Diseñado desde cero para el sector asegurador, BROKR combina
-          potencia, flexibilidad y facilidad de uso en una sola plataforma.
+          Diseñado para el mercado peruano de salud, BROKR simplifica el acceso
+          a redes médicas, copagos y beneficios EPS en una sola plataforma.
         </p>
       </div>
 
@@ -463,7 +461,7 @@ function renderHome() {
           </div>
           <div class="benefit-text">
             <h4 class="benefit-title">Velocidad</h4>
-            <p class="benefit-desc">Convierte a tu equipo en asesores especializados con acceso inmediato a la información. Operaciones en tiempo real, menos esperas y más productividad cada día.</p>
+            <p class="benefit-desc">Accede en segundos a la clínica correcta, el copago exacto y la cobertura disponible. Sin llamadas, sin esperas y sin sorpresas en el momento de la atención médica.</p>
           </div>
         </div>
 
@@ -477,7 +475,7 @@ function renderHome() {
           </div>
           <div class="benefit-text">
             <h4 class="benefit-title">Conectividad</h4>
-            <p class="benefit-desc">Gestiona eficientemente tus clientes con herramientas para su segmentación y análisis. Todo conectado: clientes, compañías y sistemas corporativos en un ecosistema unificado.</p>
+            <p class="benefit-desc">Conecta asegurados, clínicas, aseguradoras y corredores en un ecosistema unificado. Rímac, Pacífico y Mapfre integrados en tiempo real para información siempre actualizada.</p>
           </div>
         </div>
 
@@ -491,7 +489,7 @@ function renderHome() {
           </div>
           <div class="benefit-text">
             <h4 class="benefit-title">Adaptable</h4>
-            <p class="benefit-desc">Soporte al área comercial y de atención al cliente en un entorno multicanal integrado. Totalmente personalizable y escalable para adaptarse a tu modelo de negocio.</p>
+            <p class="benefit-desc">Solución personalizable para asegurados particulares, departamentos de RR.HH. y corredores de seguros. Escala según las necesidades de tu organización en el Perú.</p>
           </div>
         </div>
 
@@ -503,7 +501,7 @@ function renderHome() {
           </div>
           <div class="benefit-text">
             <h4 class="benefit-title">Seguridad</h4>
-            <p class="benefit-desc">Accede de forma rápida y segura a la información. Planifica tareas, gestiona oportunidades de venta y cumple con la normativa de protección de datos en cada operación.</p>
+            <p class="benefit-desc">Información protegida con estándares de seguridad bancaria. Cumplimiento con la normativa peruana de protección de datos personales (Ley N.° 29733) en cada operación.</p>
           </div>
         </div>
 
@@ -517,7 +515,7 @@ function renderHome() {
           </div>
           <div class="benefit-text">
             <h4 class="benefit-title">Soporte</h4>
-            <p class="benefit-desc">Se integra de forma bidireccional con otros sistemas corporativos. Equipo especializado en seguros disponible para acompañarte en cada etapa de la implantación y operación.</p>
+            <p class="benefit-desc">Equipo especializado en seguros de salud peruanos disponible para acompañarte. Soporte local, conocimiento del mercado EPS y atención personalizada en cada etapa.</p>
           </div>
         </div>
 
@@ -547,7 +545,7 @@ function renderHome() {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.6 12.19 19.79 19.79 0 0 1 1.56 3.63 2 2 0 0 1 3.53 1.45h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.06a16 16 0 0 0 6.07 6.07l1.58-1.58a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
             </svg>
-            <span>+34 900 000 000</span>
+            <span>+51 1 000 0000</span>
           </div>
           <div class="contact-info-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -568,8 +566,8 @@ function renderHome() {
             <img src="/assets/img/logo-blanco-colores.png" alt="BROKR" />
           </a>
           <p class="footer-tagline">
-            La plataforma digital que simplifica la gestión de pólizas para
-            corredurías y brokers de seguros.
+            El ecosistema Insurtech que simplifica la gestión de redes médicas,
+            copagos y beneficios EPS en el Perú.
           </p>
           <div class="footer-social">
             <a href="#" aria-label="LinkedIn">
@@ -597,17 +595,17 @@ function renderHome() {
           <div class="footer-nav-col">
             <h4>Plataforma</h4>
             <ul>
-              <li><a href="#">Gestión de pólizas</a></li>
-              <li><a href="#">Automatización BPM</a></li>
-              <li><a href="#">Dashboard BI</a></li>
-              <li><a href="#">CRM integrado</a></li>
-              <li><a href="#">Integraciones API</a></li>
+              <li><a href="#">Buscador de Redes Médicas</a></li>
+              <li><a href="#">Gestión de Copagos</a></li>
+              <li><a href="#">Portal para Corredores</a></li>
+              <li><a href="#">Beneficios EPS</a></li>
+              <li><a href="#">Integraciones</a></li>
             </ul>
           </div>
           <div class="footer-nav-col">
             <h4>Empresa</h4>
             <ul>
-              <li><a href="#">Sobre BROKR</a></li>
+              <li><a href="/nosotros">Sobre BROKR</a></li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">Partners</a></li>
               <li><a href="#">Trabaja con nosotros</a></li>
