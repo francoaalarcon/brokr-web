@@ -1,0 +1,12 @@
+# BROKR — Apache rewrite rules for pretty URLs
+# Redirige todas las rutas al index.html para que el router JS las maneje.
+
+Options -MultiViews
+RewriteEngine On
+
+# Serve existing files and directories as-is
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Everything else → index.html
+RewriteRule ^ index.html [L]
