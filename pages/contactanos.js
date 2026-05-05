@@ -1,0 +1,466 @@
+/**
+ * BROKR — Contáctanos page
+ */
+
+function renderContactanos() {
+  document.getElementById('app').innerHTML = `
+
+    <!-- ── Navbar ──────────────────────────────────────────────────────── -->
+    <nav class="home-navbar at-top" id="contactanosNavbar">
+      <a href="/" class="navbar-logo">
+        <img src="/assets/img/logo-blanco-colores.png" alt="BROKR" id="contactanosNavbarLogo" />
+      </a>
+
+      <ul class="navbar-links">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/nosotros">Nosotros</a></li>
+        <li><a href="/beneficios">Beneficios</a></li>
+        <li><a href="/contactanos">Contáctanos</a></li>
+        <li><a href="#">Comparador de planes</a></li>
+      </ul>
+
+      <div class="navbar-actions">
+        <a href="#" class="navbar-area">Ingresar</a>
+      </div>
+    </nav>
+
+    <!-- ── Hero ────────────────────────────────────────────────────────── -->
+    <section class="ns-hero">
+      <div class="hero-bg"></div>
+      <div class="hero-ring hero-ring--1"></div>
+      <div class="hero-ring hero-ring--2"></div>
+      <div class="hero-ring hero-ring--3"></div>
+
+      <div class="ns-hero__content">
+        <span class="ns-hero__label">Hablemos</span>
+        <h1 class="ns-hero__title">Contáctanos</h1>
+        <p class="ns-hero__lead">
+          Cuéntanos sobre tu empresa y cómo usas los seguros de salud.
+          Nuestro equipo te preparará una demo personalizada sin costo.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── Contacto principal ───────────────────────────────────────────── -->
+    <section class="ct-contact">
+      <div class="ct-contact__inner">
+
+        <!-- Formulario -->
+        <div class="ct-contact__form-col">
+          <span class="ct-section-label">Escríbenos</span>
+          <h2 class="ct-section-title">Solicita tu demo</h2>
+          <p class="ct-section-desc">
+            Completa el formulario y nos pondremos en contacto contigo
+            dentro de las próximas 24 horas hábiles.
+          </p>
+
+          <form class="ct-form" id="contactForm" novalidate>
+            <div class="ct-form-row">
+              <div class="ct-form-group">
+                <label class="ct-form-label" for="ct-nombre">Nombre completo *</label>
+                <input class="ct-form-input" type="text" id="ct-nombre" name="nombre" placeholder="Tu nombre" required />
+              </div>
+              <div class="ct-form-group">
+                <label class="ct-form-label" for="ct-empresa">Empresa / Organización *</label>
+                <input class="ct-form-input" type="text" id="ct-empresa" name="empresa" placeholder="Nombre de tu empresa" required />
+              </div>
+            </div>
+
+            <div class="ct-form-row">
+              <div class="ct-form-group">
+                <label class="ct-form-label" for="ct-email">Correo electrónico *</label>
+                <input class="ct-form-input" type="email" id="ct-email" name="email" placeholder="tu@empresa.com" required />
+              </div>
+              <div class="ct-form-group">
+                <label class="ct-form-label" for="ct-telefono">Teléfono</label>
+                <input class="ct-form-input" type="tel" id="ct-telefono" name="telefono" placeholder="+51 999 000 000" />
+              </div>
+            </div>
+
+            <div class="ct-form-group">
+              <label class="ct-form-label" for="ct-perfil">¿Cuál es tu perfil? *</label>
+              <select class="ct-form-select" id="ct-perfil" name="perfil" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="rrhh">Área de Recursos Humanos</option>
+                <option value="corredor">Corredor de seguros</option>
+                <option value="asegurado">Asegurado particular</option>
+                <option value="clinica">Clínica / Centro médico</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="ct-form-group">
+              <label class="ct-form-label" for="ct-mensaje">¿En qué podemos ayudarte? *</label>
+              <textarea class="ct-form-textarea" id="ct-mensaje" name="mensaje" placeholder="Cuéntanos brevemente sobre tu empresa y qué problema quieres resolver..." rows="5" required></textarea>
+            </div>
+
+            <div class="ct-form-footer">
+              <p class="ct-form-privacy">
+                Al enviar este formulario aceptas nuestra
+                <a href="#">política de privacidad</a>.
+              </p>
+              <button type="submit" class="btn btn--primary">
+                Enviar mensaje <span class="btn-arrow">→</span>
+              </button>
+            </div>
+          </form>
+
+          <div class="ct-form-success" id="contactSuccess">
+            <div class="ct-success-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-celeste)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <h3 class="ct-success-title">¡Mensaje enviado!</h3>
+            <p class="ct-success-desc">
+              Gracias por contactarnos. Nuestro equipo revisará tu solicitud
+              y se pondrá en contacto contigo en menos de 24 horas hábiles.
+            </p>
+          </div>
+        </div>
+
+        <!-- Info lateral -->
+        <div class="ct-contact__info-col">
+
+          <div class="ct-info-block">
+            <span class="ct-section-label">Información de contacto</span>
+            <h2 class="ct-section-title">Estamos aquí para ayudarte</h2>
+
+            <div class="ct-info-list">
+              <div class="ct-info-item">
+                <div class="ct-info-item__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-celeste)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <div class="ct-info-item__body">
+                  <div class="ct-info-item__label">Correo electrónico</div>
+                  <a href="mailto:hola@brokr.app" class="ct-info-item__value">hola@brokr.app</a>
+                </div>
+              </div>
+
+              <div class="ct-info-item">
+                <div class="ct-info-item__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-celeste)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.6 12.19 19.79 19.79 0 0 1 1.56 3.63 2 2 0 0 1 3.53 1.45h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.06a16 16 0 0 0 6.07 6.07l1.58-1.58a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div class="ct-info-item__body">
+                  <div class="ct-info-item__label">Teléfono</div>
+                  <span class="ct-info-item__value">+51 1 000 0000</span>
+                </div>
+              </div>
+
+              <div class="ct-info-item">
+                <div class="ct-info-item__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-celeste)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                </div>
+                <div class="ct-info-item__body">
+                  <div class="ct-info-item__label">Horario de atención</div>
+                  <span class="ct-info-item__value">Lunes a viernes, 9:00 – 18:00 h</span>
+                </div>
+              </div>
+
+              <div class="ct-info-item">
+                <div class="ct-info-item__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-celeste)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div class="ct-info-item__body">
+                  <div class="ct-info-item__label">Ubicación</div>
+                  <span class="ct-info-item__value">Lima, Perú</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ct-info-social">
+            <p class="ct-info-social__label">Síguenos</p>
+            <div class="ct-info-social__links">
+              <a href="#" aria-label="LinkedIn" class="ct-social-link">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/>
+                  <circle cx="4" cy="4" r="2"/>
+                </svg>
+                LinkedIn
+              </a>
+              <a href="#" aria-label="Instagram" class="ct-social-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+                Instagram
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ──────────────────────────────────────────────────────────── -->
+    <section class="ct-faq">
+      <div class="ct-faq__inner">
+
+        <div class="ct-faq__header">
+          <span class="ns-awards__label">Preguntas frecuentes</span>
+          <h2 class="ns-awards__title">¿Tienes dudas? Te respondemos.</h2>
+          <p class="ns-awards__subtitle">
+            Encuentra respuestas a las preguntas más comunes sobre BROKR,
+            nuestros planes y cómo funciona la integración.
+          </p>
+        </div>
+
+        <div class="ct-faq__list" id="faqList">
+
+          <div class="ct-faq-item">
+            <button class="ct-faq-item__q" aria-expanded="false">
+              ¿Qué es BROKR y para quién es?
+              <span class="ct-faq-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </span>
+            </button>
+            <div class="ct-faq-item__a">
+              <p>BROKR es una plataforma Insurtech diseñada para el mercado peruano de seguros de salud. Centraliza la gestión de redes médicas, copagos y beneficios EPS en un solo lugar. Está dirigida a asegurados particulares, departamentos de Recursos Humanos y corredores de seguros.</p>
+            </div>
+          </div>
+
+          <div class="ct-faq-item">
+            <button class="ct-faq-item__q" aria-expanded="false">
+              ¿Qué aseguradoras están integradas en BROKR?
+              <span class="ct-faq-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </span>
+            </button>
+            <div class="ct-faq-item__a">
+              <p>Actualmente BROKR integra las tres principales aseguradoras del Perú: Rímac Seguros, Pacífico Seguros y Mapfre Seguros. Estamos en proceso de incorporar nuevas aseguradoras y EPS al ecosistema.</p>
+            </div>
+          </div>
+
+          <div class="ct-faq-item">
+            <button class="ct-faq-item__q" aria-expanded="false">
+              ¿BROKR se integra con nuestro sistema de RR.HH.?
+              <span class="ct-faq-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </span>
+            </button>
+            <div class="ct-faq-item__a">
+              <p>Sí. BROKR cuenta con una API de integración que permite sincronizar altas, bajas y modificaciones de asegurados con los principales sistemas de gestión de planillas y RR.HH. del mercado peruano. El equipo técnico acompaña el proceso de integración sin costo adicional.</p>
+            </div>
+          </div>
+
+          <div class="ct-faq-item">
+            <button class="ct-faq-item__q" aria-expanded="false">
+              ¿Cuánto cuesta usar BROKR?
+              <span class="ct-faq-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </span>
+            </button>
+            <div class="ct-faq-item__a">
+              <p>BROKR ofrece planes adaptados al tamaño y necesidades de cada organización. Contáctanos para recibir una propuesta personalizada. La demo es completamente gratuita y sin compromiso.</p>
+            </div>
+          </div>
+
+          <div class="ct-faq-item">
+            <button class="ct-faq-item__q" aria-expanded="false">
+              ¿Cómo garantizan la seguridad de la información?
+              <span class="ct-faq-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </span>
+            </button>
+            <div class="ct-faq-item__a">
+              <p>La seguridad es nuestra prioridad. BROKR utiliza cifrado de extremo a extremo, autenticación multifactor y cumple con la Ley N.° 29733 de Protección de Datos Personales del Perú. Toda la información se almacena en servidores con certificación de seguridad bancaria.</p>
+            </div>
+          </div>
+
+          <div class="ct-faq-item">
+            <button class="ct-faq-item__q" aria-expanded="false">
+              ¿Cuánto tiempo tarda la implementación?
+              <span class="ct-faq-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </span>
+            </button>
+            <div class="ct-faq-item__a">
+              <p>La implementación básica tarda entre 1 y 5 días hábiles según la complejidad de la integración. Para empresas que no requieren integración con sistemas externos, la activación puede ser el mismo día. Nuestro equipo acompaña todo el proceso de onboarding.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Footer ────────────────────────────────────────────────────────── -->
+    <footer class="home-footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="footer-logo">
+            <img src="/assets/img/logo-blanco-colores.png" alt="BROKR" />
+          </a>
+          <p class="footer-tagline">
+            El ecosistema Insurtech que simplifica la gestión de redes médicas,
+            copagos y beneficios EPS en el Perú.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <div class="footer-nav-col">
+            <h4>Plataforma</h4>
+            <ul>
+              <li><a href="/#funcionalidades">Buscador de Redes Médicas</a></li>
+              <li><a href="/#funcionalidades">Gestión de Copagos</a></li>
+              <li><a href="/#funcionalidades">Portal para Corredores</a></li>
+              <li><a href="/#funcionalidades">Beneficios EPS</a></li>
+              <li><a href="/#integraciones">Integraciones</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="/nosotros">Sobre BROKR</a></li>
+              <li><a href="/beneficios">Beneficios</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="/contactanos">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Política de privacidad</a></li>
+              <li><a href="#">Términos de uso</a></li>
+              <li><a href="#">Política de cookies</a></li>
+              <li><a href="#">Aviso legal</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 BROKR. Todos los derechos reservados.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacidad</a>
+          <a href="#">Cookies</a>
+          <a href="#">Aviso legal</a>
+        </div>
+      </div>
+    </footer>
+
+  `;
+
+  initContactanosNavbar();
+  initContactForm();
+  initFaq();
+}
+
+function initContactanosNavbar() {
+  const navbar = document.getElementById('contactanosNavbar');
+  const logo   = document.getElementById('contactanosNavbarLogo');
+  if (!navbar || !logo) return;
+
+  function onScroll() {
+    if (window.scrollY > 40) {
+      navbar.classList.remove('at-top');
+      navbar.classList.add('scrolled');
+      logo.src = '/assets/img/logo-oscuro-colores.png';
+    } else {
+      navbar.classList.add('at-top');
+      navbar.classList.remove('scrolled');
+      logo.src = '/assets/img/logo-blanco-colores.png';
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+}
+
+function initContactForm() {
+  const form    = document.getElementById('contactForm');
+  const success = document.getElementById('contactSuccess');
+  if (!form || !success) return;
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    // Basic HTML5 validation
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    form.style.opacity = '0';
+    form.style.pointerEvents = 'none';
+    setTimeout(() => {
+      form.style.display = 'none';
+      success.style.display = 'flex';
+      setTimeout(() => { success.style.opacity = '1'; }, 20);
+    }, 300);
+  });
+}
+
+function initFaq() {
+  const items = document.querySelectorAll('.ct-faq-item');
+  items.forEach(item => {
+    const btn = item.querySelector('.ct-faq-item__q');
+    const ans = item.querySelector('.ct-faq-item__a');
+    if (!btn || !ans) return;
+
+    btn.addEventListener('click', () => {
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+      // Close all others
+      items.forEach(other => {
+        const otherBtn = other.querySelector('.ct-faq-item__q');
+        const otherAns = other.querySelector('.ct-faq-item__a');
+        if (otherBtn && otherAns) {
+          otherBtn.setAttribute('aria-expanded', 'false');
+          otherAns.style.maxHeight = '0';
+        }
+      });
+
+      if (!isOpen) {
+        btn.setAttribute('aria-expanded', 'true');
+        ans.style.maxHeight = ans.scrollHeight + 'px';
+      }
+    });
+  });
+}

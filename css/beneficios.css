@@ -1,0 +1,263 @@
+/* BROKR — Beneficios page styles */
+
+/* ── Stats strip ──────────────────────────────────────────────────────────── */
+
+.bn-stats {
+  background: var(--color-azul-oscuro);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 3.5rem 3.5rem;
+}
+
+.bn-stats__inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+
+.bn-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 2rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.07);
+  text-align: center;
+}
+
+.bn-stat:first-child {
+  padding-left: 0;
+}
+
+.bn-stat:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.bn-stat__value {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 700;
+  color: var(--color-celeste);
+  line-height: 1;
+}
+
+.bn-stat__label {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.45;
+  max-width: 120px;
+}
+
+/* ── Profiles section ─────────────────────────────────────────────────────── */
+
+.bn-profiles {
+  background: var(--color-blanco);
+  padding: 5.5rem 3.5rem;
+}
+
+.bn-profiles__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.bn-profiles__header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.bn-profiles__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+/* ── Profile cards ────────────────────────────────────────────────────────── */
+
+.bn-profile-card {
+  position: relative;
+  background: #f9faff;
+  border: 1px solid rgba(33, 56, 239, 0.1);
+  border-radius: 14px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: box-shadow 0.25s, transform 0.25s;
+}
+
+.bn-profile-card:hover {
+  box-shadow: 0 12px 40px rgba(33, 56, 239, 0.1);
+  transform: translateY(-3px);
+}
+
+.bn-profile-card--featured {
+  background: var(--color-azul-oscuro);
+  border-color: transparent;
+  box-shadow: 0 20px 60px rgba(2, 11, 45, 0.3);
+}
+
+.bn-profile-card--featured:hover {
+  box-shadow: 0 24px 72px rgba(2, 11, 45, 0.4);
+  transform: translateY(-5px);
+}
+
+.bn-profile-card__badge {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-celeste);
+  color: var(--color-azul-oscuro);
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.9rem;
+  border-radius: 99px;
+  white-space: nowrap;
+}
+
+.bn-profile-card__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bn-profile-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: rgba(33, 56, 239, 0.08);
+  border: 1px solid rgba(33, 56, 239, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bn-profile-card--featured .bn-profile-card__icon {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.bn-profile-card__icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.bn-profile-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-azul-oscuro);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.bn-profile-card--featured .bn-profile-card__title {
+  color: var(--color-blanco);
+}
+
+.bn-profile-card__sub {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  color: #8a93b2;
+  margin: 0.15rem 0 0;
+}
+
+.bn-profile-card--featured .bn-profile-card__sub {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.bn-profile-card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  flex: 1;
+}
+
+.bn-profile-card__list li {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: #3a4260;
+  line-height: 1.55;
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.bn-profile-card__list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.52em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(33, 56, 239, 0.25);
+}
+
+.bn-profile-card--featured .bn-profile-card__list li {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.bn-profile-card--featured .bn-profile-card__list li::before {
+  background: var(--color-celeste);
+}
+
+/* ── Responsive ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .bn-stats {
+    padding: 3rem 2rem;
+  }
+
+  .bn-stat {
+    padding: 0 1.25rem;
+  }
+
+  .bn-profiles {
+    padding: 4rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .bn-stats {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .bn-stats__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .bn-stat {
+    padding: 0;
+    border-right: none;
+  }
+
+  .bn-stat:nth-child(odd) {
+    border-right: 1px solid rgba(255, 255, 255, 0.07);
+    padding-right: 1.5rem;
+  }
+
+  .bn-profiles {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .bn-profiles__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .bn-profile-card--featured {
+    order: -1;
+  }
+}

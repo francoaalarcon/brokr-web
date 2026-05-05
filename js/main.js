@@ -13,6 +13,14 @@ Router.register('/nosotros', () => {
   renderNosotros();
 });
 
+Router.register('/beneficios', () => {
+  renderBeneficios();
+});
+
+Router.register('/contactanos', () => {
+  renderContactanos();
+});
+
 // ── Init ──────────────────────────────────────────────────────────────────────
 
 Router.init();

@@ -14,8 +14,8 @@ function renderHome() {
       <ul class="navbar-links">
         <li><a href="/">Inicio</a></li>
         <li><a href="/nosotros">Nosotros</a></li>
-        <li><a href="#ventajas">Beneficios</a></li>
-        <li><a href="#contacto">Contáctanos</a></li>
+        <li><a href="/beneficios">Beneficios</a></li>
+        <li><a href="/contactanos">Contáctanos</a></li>
         <li><a href="#">Comparador de planes</a></li>
       </ul>
 
@@ -603,10 +603,10 @@ function renderHome() {
             <h4>Empresa</h4>
             <ul>
               <li><a href="/nosotros">Sobre BROKR</a></li>
+              <li><a href="/beneficios">Beneficios</a></li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">Partners</a></li>
-              <li><a href="#">Trabaja con nosotros</a></li>
-              <li><a href="#">Contacto</a></li>
+              <li><a href="/contactanos">Contacto</a></li>
             </ul>
           </div>
           <div class="footer-nav-col">
