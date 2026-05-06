@@ -1,12 +1,12 @@
-# BROKR — Apache rewrite rules for pretty URLs
-# Redirige todas las rutas al index.html para que el router JS las maneje.
+# BROKR — Apache configuration for static multi-page site
+# Each section lives in its own directory with an index.html.
+# Apache serves index.html automatically when a directory is requested.
 
-Options -MultiViews
+Options -MultiViews -Indexes
+DirectoryIndex index.html
+
+# Optional: redirect old SPA routes (without trailing slash) to directory form
 RewriteEngine On
-
-# Serve existing files and directories as-is
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-
-# Everything else → index.html
-RewriteRule ^ index.html [L]
+RewriteRule ^(nosotros|beneficios|contactanos)$ /$1/ [R=301,L]
