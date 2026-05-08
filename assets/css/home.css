@@ -811,6 +811,317 @@
   background: rgba(255,255,255,0.15);
 }
 
+/* EMO mockup */
+.mock-emo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.mock-emo-card {
+  background: rgba(255,255,255,0.08);
+  border-radius: 8px;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-left: 3px solid rgba(255,200,50,0.5);
+}
+
+.mock-emo-card--received {
+  border-left-color: rgba(3,204,158,0.6);
+}
+
+.mock-emo-info { flex: 1; }
+
+.mock-badge--pending {
+  background: rgba(255,200,50,0.2);
+  color: #ffc832;
+}
+
+.mock-emo-report {
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+  padding: 0.75rem;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.mock-emo-report-header {
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  margin-bottom: 0.45rem;
+}
+
+.mock-emo-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.mock-emo-row {
+  height: 5px;
+  width: 100%;
+  border-radius: 3px;
+  background: rgba(255,255,255,0.08);
+}
+
+/* Chat mockup */
+.mock-chat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mock-chat-name {
+  text-align: center;
+  font-size: 0.65rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: rgba(255,255,255,0.45);
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  margin-bottom: 0.1rem;
+}
+
+.mock-bubble {
+  display: flex;
+  gap: 0.4rem;
+  align-items: flex-start;
+  max-width: 84%;
+}
+
+.mock-bubble--bot {
+  align-self: flex-start;
+}
+
+.mock-bubble--user {
+  align-self: flex-end;
+  flex-direction: column;
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px 12px 3px 12px;
+  padding: 0.5rem 0.7rem;
+  max-width: 78%;
+}
+
+.mock-bubble-avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.mock-bubble-text {
+  background: rgba(33,56,239,0.65);
+  border-radius: 12px 12px 12px 3px;
+  padding: 0.55rem 0.7rem;
+  flex: 1;
+}
+
+.mock-chat-input {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255,255,255,0.07);
+  border-radius: 20px;
+  padding: 0.4rem 0.6rem 0.4rem 0.75rem;
+  margin-top: 0.2rem;
+}
+
+.mock-chat-send {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--color-celeste);
+  flex-shrink: 0;
+}
+
+/* Wellness/Nutrition mockup */
+.mock-wellness {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.mock-imc {
+  background: #eef1fb;
+  border-radius: 8px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mock-imc-label {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  color: #5a6480;
+}
+
+.mock-imc-label strong {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-azul-oscuro);
+  margin: 0 0.15rem;
+}
+
+.mock-imc-status {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--color-celeste);
+}
+
+.mock-imc-bar {
+  height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(to right, #03cc9e 0%, #ffc832 55%, #ff6b6b 100%);
+  position: relative;
+}
+
+.mock-imc-dot {
+  position: absolute;
+  left: 18%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-azul);
+  border: 2px solid white;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+.mock-wellness-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.mock-wellness-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #f4f7fe;
+  border-radius: 6px;
+  padding: 0.5rem 0.65rem;
+}
+
+.mock-wellness-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.mock-wellness-icon--green  { background: rgba(3,204,158,0.25); }
+.mock-wellness-icon--orange { background: rgba(255,140,50,0.25); }
+.mock-wellness-icon--blue   { background: rgba(33,56,239,0.2); }
+.mock-wellness-icon--teal   { background: rgba(3,204,158,0.18); }
+
+/* Activity/Points mockup */
+.mock-activity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  width: 100%;
+}
+
+.mock-activity-ring {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mock-activity-steps {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+}
+
+.mock-activity-num {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.9);
+}
+
+.mock-activity-sub {
+  font-family: var(--font-body);
+  font-size: 0.55rem;
+  color: rgba(255,255,255,0.38);
+  margin-top: 0.15rem;
+}
+
+.mock-activity-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.4rem;
+  width: 100%;
+}
+
+.mock-activity-stat {
+  background: rgba(255,255,255,0.07);
+  border-radius: 6px;
+  padding: 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.mock-activity-stat-val {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.85);
+}
+
+.mock-activity-stat-lbl {
+  height: 4px;
+  width: 70%;
+  border-radius: 2px;
+  background: rgba(255,255,255,0.1);
+}
+
+.mock-promo-card {
+  background: rgba(255,255,255,0.08);
+  border-radius: 8px;
+  padding: 0.6rem 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+}
+
+.mock-promo-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  background: rgba(255,200,50,0.2);
+  flex-shrink: 0;
+}
+
+.mock-promo-info { flex: 1; }
+
+.mock-pts-badge {
+  font-size: 0.6rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+  background: rgba(255,200,50,0.22);
+  color: #ffc832;
+  padding: 0.2rem 0.45rem;
+  border-radius: 99px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
 /* ── Benefits grid ───────────────────────────────────────────────────────── */
 
 .benefits {
